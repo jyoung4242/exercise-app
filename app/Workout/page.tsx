@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { exerciseDB, exerciseType } from "@/sourdData/exercises";
 
@@ -52,32 +52,33 @@ const WorkoutPage = () => {
   return (
     <div>
       <h1>Exercise #{workoutNum}</h1>
-      <select onInput={selectHandler} disabled={isStartExerciseDisabled}>
-        <option value="legs">Legs</option>
-        <option value="upper">Upper</option>
-        <option value="core">Core</option>
-      </select>
+      <Suspense>
+        <select onInput={selectHandler} disabled={isStartExerciseDisabled}>
+          <option value="legs">Legs</option>
+          <option value="upper">Upper</option>
+          <option value="core">Core</option>
+        </select>
 
-      <select onInput={setExcerciseHandler} disabled={isStartExerciseDisabled}>
-        {exerciseDB[exercises].map(exercise => (
-          <option value={exercise} key={exercise}>
-            {exercise}
-          </option>
-        ))}
-      </select>
+        <select onInput={setExcerciseHandler} disabled={isStartExerciseDisabled}>
+          {exerciseDB[exercises].map(exercise => (
+            <option value={exercise} key={exercise}>
+              {exercise}
+            </option>
+          ))}
+        </select>
+        <button className="wo_button se_button" disabled={isStartExerciseDisabled} onClick={startExerciseHandler}>
+          Start Exercise
+        </button>
 
-      <button className="wo_button se_button" disabled={isStartExerciseDisabled} onClick={startExerciseHandler}>
-        Start Exercise
-      </button>
+        {isStartExerciseDisabled ? <div className="timerreadout">{timerdata} seconds </div> : null}
 
-      {isStartExerciseDisabled ? <div className="timerreadout">{timerdata} seconds </div> : null}
-
-      <button className="wo_button ne_button" onClick={nextWorkoutHandler} disabled={isNextWorkoutDisabled}>
-        Next Exercise
-      </button>
-      <button className="wo_button ew_button" onClick={endWorkoutHandler}>
-        End Workout
-      </button>
+        <button className="wo_button ne_button" onClick={nextWorkoutHandler} disabled={isNextWorkoutDisabled}>
+          Next Exercise
+        </button>
+        <button className="wo_button ew_button" onClick={endWorkoutHandler}>
+          End Workout
+        </button>
+      </Suspense>
     </div>
   );
 };
