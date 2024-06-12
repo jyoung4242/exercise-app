@@ -3,6 +3,9 @@
 import withPWAInit from "@ducanh2912/next-pwa";
 
 const nextConfig = {
+  experimental: {
+    missingSuspenseWithCSRBailout: false,
+  },
   reactStrictMode: true, // Enable React strict mode
   swcMinify: true, // Enable SWC minification for faster builds
   compiler: {
