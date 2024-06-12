@@ -26,17 +26,17 @@ body {
 }
 
 header {
-  font-size: 2.5rem;
+  font-size: 2rem;
   width: 100%;
   text-align: center;
   margin-top: 1em;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   width: 100%;
   text-align: center;
-  margin-top: 1em;
+  margin-top: 0.5em;
 }
 
 select {
@@ -86,7 +86,7 @@ a {
   margin: 4px 2px;
   cursor: pointer;
   width: 75%;
-  top: 20%;
+  top: 15%;
   left: 50%;
   transform: translateX(-50%);
 }
