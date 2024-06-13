@@ -4,7 +4,7 @@
   "description": "Quick Utility to log exercise",
   "short_name": "exTracker",
   "theme_color": "#2196f3",
-  "background_color": "#2196f3",
+  "background_color": "#ffffff",
   "display": "standalone",
   "orientation": "portrait",
   "scope": "/",
@@ -13,6 +13,12 @@
     {
       "src": "/icon.png",
       "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/portrait.png",
+      "sizes": "1170x2532",
       "type": "image/png",
       "purpose": "any"
     }
