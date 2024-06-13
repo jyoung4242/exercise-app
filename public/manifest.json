@@ -21,7 +21,7 @@
   "screenshots": [
     {
       "src": "./portrait.png",
-      "sizes": "2532x1170",
+      "sizes": "1170x2532",
       "type": "image/png"
     }
   ]

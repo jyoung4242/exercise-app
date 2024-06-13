@@ -19,13 +19,13 @@ export const metadata: Metadata = {
   colorScheme: "light",
   viewport: "minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover",
   icons: {
-    apple: `/public/icon.png`,
+    apple: `/appleicon180.png`,
   },
   appleWebApp: {
     title: `Mookies Exercise App`,
     capable: true,
     statusBarStyle: "black-translucent",
-    startupImage: "/public/portrait.png",
+    startupImage: "/portrait.png",
   },
 };
 
@@ -37,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        <link rel="apple-touch-icon" sizes="180x180" href="/public/appleicon180.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/appleicon180.png" />
       </Head>
       <body>
         <header>Hello Justin</header>
