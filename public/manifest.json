@@ -9,8 +9,8 @@
   "start_url": "/",
   "icons": [
     {
-      "src": "/public/exercise-app.png",
-      "sizes": "1024x1024",
+      "src": "public/exercise-app.png",
+      "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable any"
     }

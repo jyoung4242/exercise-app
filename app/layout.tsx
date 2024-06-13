@@ -17,10 +17,9 @@ export const metadata: Metadata = {
   themeColor: "#ffffff",
   colorScheme: "light",
   viewport: "minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover",
-  icons: [
-    { rel: "apple-touch-icon", url: "public/exercise-app.png" },
-    { rel: "icon", url: "public/exercise-app.png" },
-  ],
+  icons: {
+    apple: `./public/exercise-app.png`,
+  },
 };
 
 export default function RootLayout({
