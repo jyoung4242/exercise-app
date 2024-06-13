@@ -38,6 +38,13 @@ export default function RootLayout({
     <html lang="en">
       <Head>
         <link rel="apple-touch-icon" sizes="180x180" href="/appleicon180.png" />
+        <link
+          rel="apple-touch-startup-image"
+          media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)"
+          href="/portrait.png"
+        >
+          {" "}
+        </link>
       </Head>
       <body>
         <header>Hello Justin</header>
