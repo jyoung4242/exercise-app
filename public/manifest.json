@@ -1,5 +1,7 @@
 {
+  "id": "exTracker",
   "name": "Excercise Tracker",
+  "description": "Quick Utility to log exercise",
   "short_name": "exTracker",
   "theme_color": "#2196f3",
   "background_color": "#2196f3",
@@ -15,5 +17,12 @@
       "purpose": "any"
     }
   ],
-  "splash_pages": null
+  "splash_pages": null,
+  "screenshots": [
+    {
+      "src": "./public/portrait.png",
+      "sizes": "2532x1170",
+      "type": "image/png"
+    }
+  ]
 }
