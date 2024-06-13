@@ -9,28 +9,10 @@
   "start_url": "/",
   "icons": [
     {
-      "src": "exercise-app/public/manifest-icon-192.maskable.png",
-      "sizes": "192x192",
+      "src": "exercise-app/public/appleicon.png",
+      "sizes": "180x180",
       "type": "image/png",
       "purpose": "any"
-    },
-    {
-      "src": "exercise-app/public/manifest-icon-192.maskable.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "maskable"
-    },
-    {
-      "src": "exercise-app/public/manifest-icon-512.maskable.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "exercise-app/public/manifest-icon-512.maskable.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
     }
   ],
   "splash_pages": null
