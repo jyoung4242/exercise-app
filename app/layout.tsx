@@ -18,7 +18,13 @@ export const metadata: Metadata = {
   colorScheme: "light",
   viewport: "minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover",
   icons: {
-    apple: `/public/appleicon.png`,
+    apple: `/public/icon.png`,
+  },
+  appleWebApp: {
+    title: `Apple ${APP_DEFAULT_TITLE}`,
+    capable: true,
+    statusBarStyle: "black-translucent",
+    startupImage: "/public/portrait.png",
   },
 };
 
