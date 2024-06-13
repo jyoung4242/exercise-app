@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     apple: `/public/icon.png`,
   },
   appleWebApp: {
-    title: `Apple ${APP_DEFAULT_TITLE}`,
+    title: `Mookies Exercise App`,
     capable: true,
     statusBarStyle: "black-translucent",
     startupImage: "/public/portrait.png",
