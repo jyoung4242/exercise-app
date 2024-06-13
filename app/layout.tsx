@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   colorScheme: "light",
   viewport: "minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover",
   icons: {
-    apple: `/public/apple-icon-180.png`,
+    apple: `/public/appleicon.png`,
   },
 };
 
