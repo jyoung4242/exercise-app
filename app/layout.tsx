@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Head from "next/head";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -35,6 +36,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <link rel="apple-touch-icon" sizes="180x180" href="/public/appleicon180.png" />
+      </Head>
       <body>
         <header>Hello Justin</header>
         <main>{children}</main>
