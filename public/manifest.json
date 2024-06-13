@@ -11,7 +11,7 @@
   "start_url": "/",
   "icons": [
     {
-      "src": "/public/icon.png",
+      "src": "/icon.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
@@ -20,7 +20,7 @@
   "splash_pages": null,
   "screenshots": [
     {
-      "src": "./public/portrait.png",
+      "src": "./portrait.png",
       "sizes": "2532x1170",
       "type": "image/png"
     }
