@@ -40,7 +40,7 @@ export default function RootLayout({
         <link rel="apple-touch-icon" sizes="180x180" href="/appleicon180.png" />
         <link
           rel="apple-touch-startup-image"
-          media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)"
+          media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3)"
           href="/portrait.png"
         >
           {" "}

@@ -1,5 +1,7 @@
 "use client";
 import { useRouter } from "next/navigation";
+import { useEffect } from "react";
+import { StateProvider } from "../app/context/statecontext";
 
 const HomePage = () => {
   const router = useRouter();
@@ -8,11 +10,15 @@ const HomePage = () => {
     router.push(`/Workout?isRunning=false&timer=0&workoutNum=1`);
   }
 
+  useEffect(() => {}, []);
+
   return (
     <div>
-      <button className="wo_button" onClick={handleClick}>
-        Start Workout
-      </button>
+      <StateProvider>
+        <button className="wo_button" onClick={handleClick}>
+          Start Workout
+        </button>
+      </StateProvider>
     </div>
   );
 };
